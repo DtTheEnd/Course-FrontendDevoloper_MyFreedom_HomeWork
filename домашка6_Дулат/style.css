@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(202, 202, 202);
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.badj {
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 8px;
+  position: relative;
+  bottom: 315px;
+  left: 270px;
+}/*# sourceMappingURL=style.css.map */

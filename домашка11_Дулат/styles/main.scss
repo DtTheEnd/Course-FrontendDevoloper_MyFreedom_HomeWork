@@ -1,0 +1,56 @@
+@use 'variables';
+// global
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin button-style ($color) {
+    background-color: $color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+// Стили
+.header {
+    background-color: variables.$primery-color;
+    color: white;
+    padding: 20px;
+}
+
+.button {
+    @include button-style(variables.$primery-color);
+
+    &:hover {
+        background-color: darken(variables.$primery-color, 10%);
+    }
+}
+
+.link {
+    color: variables.$primery-color;
+    text-decoration: none;
+
+    &:hover {
+        color: darken(variables.$primery-color, 10%);
+    }
+}
+
+.card {
+    padding: variables.$spacing;
+    margin-bottom: variables.$spacing;
+    background-color: variables.$primery-color;
+
+    .card-header {
+        font-size: 24px;
+        margin-bottom: 10px;
+        background-color: variables.$second-color;
+    }
+
+    .card-body {
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: variables.$second-color;
+    }
+}

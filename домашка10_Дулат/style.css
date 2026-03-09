@@ -1,0 +1,26 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 400px);
+  gap: 20px;
+}
+.gallery .card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.gallery .card h3 {
+  margin-top: 0;
+  color: #333;
+}
+.gallery .card p {
+  color: #666;
+}
+.gallery .card:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.gallery .card:nth-child(1) {
+  grid-column: 2 span;
+}/*# sourceMappingURL=style.css.map */

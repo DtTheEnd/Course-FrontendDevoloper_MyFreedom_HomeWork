@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Онлайн-вебинар "Формы и медиаконтент B HTML"</h1>
+        <p>Разбор возможностей HTML-форм, работа с аудио и видео, практические примеры.</p>
+        <time datetime="2025-12-25T19:00:00">Дата: 25 декабря 2025 Время: 19:00 (UTC+6)</time><br>
+        <iframe src="https://vk.com/video_ext.php?oid=580096287&id=456240918&autoplay=1" width="640" height="360"
+            style="background-color: #000"
+            allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+    <div class="formi">
+        <form action="#" method="post">
+            <label for="username">Имя пользователя</label><br>
+            <input class="row" id="username" name="username" type="text" required><br>
+            <label for="email">Email</label><br>
+            <input class="row" id="email" name="email" type="email" required><br>
+            <p>Формат участия</p>
+            <label for="uch1">
+                <input id="uch1" name="uch" type="radio" value="online">
+                Онлайн-участие
+            </label><br>
+            <label for="uch2">
+                <input id="uch2" name="uch" type="radio" value="Zapis">
+                Только запись вебинара
+            </label><br><br>
+            <label>
+                <input type="checkbox" name="extra_cheese" value="yes" required>
+                Согласен(-на) на обработку перснональныз данных
+            </label><br><br>
+            <label for="question">Вопрос спикеру (необязательно)</label>
+            <textarea name="question" id="question" placeholder="Указать вопрос, который хотелось бы разобрать на вебинаре"></textarea>
+            <button type="submit">Записаться</button>
+        </form>
+    </div>
+</body>
+
+</html>

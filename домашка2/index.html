@@ -1,0 +1,120 @@
+<!-- 
+1. Анализ страницы: https://astana.complex-bar.kz/product/sirop-pinch-and-drop-05031724/:
+
+2...
+
+3.
+3.1) Семантические теги: 
+header не используется, 
+main не используется, 
+article присутствует(кнопка Войти открывает) , 
+nav присутствует но не все, 
+section не используется, 
+aside отсутсвует, 
+sidebar отсутсвует
+3.2) Заголовки: 
+h1 один, 
+h2 используются для разделов (Применение, Бренд Pinch&Drop), 
+Последующие h заголовоки меньшей иерархии не присутсвует
+3.3) ДА и таких моментов много
+3.4) НЕТ ни один доп тег не используеться
+
+4. Проблемы: 
+header/footer оформлены через div c классами
+section оформлены через div c классами
+aside оформлены через div c классами
+nav оформлены через div c классами
+  -->
+
+<!-- АНТИПРИМЕР -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTIPRIMER </title>
+</head>
+
+<body>
+    <div class="container-fluid  cmx-header header-grid">
+        <div class="span12">
+            <ul class="cb-horizaontal-list">
+                <li>Бокалы</li>
+                <li>Стаканы</li>
+                <li>И тд...</li>
+                <li>И тд...</li>
+                <li>И тд...</li>
+            </ul>
+        </div>
+    </div>
+    <div class="span12 main-content=grid...">
+        <div class="product_detail_page">
+            <h1>Сироп «Карамель» Pinch&Drop стекло 1л D=85,H=330мм</h1>
+        </div>
+        <div class="cmx-product-details_product-tabs">
+            <ul>
+                <li>Характеристики</li>
+                <li>Описание</li>
+                <li>Полезные файлы</li>
+                <li>Наличие в магазинах</li>
+            </ul>
+        </div>
+        <div class="container-fluid-row">Похожие товары</div>
+        <div class="container-fluid-row">Рекомендуем</div>
+        <div class="container-fluid-row">Вы заинтересовались</div>
+    </div>
+    <div class="container-fluid cmx-footer">
+        <div class="container-fluid-row">Лучшие скидки, новинки и мероприятия 2 раза в неделю на вашу почту</div>
+        <div class="cb -cupplier-promotion">Станьте поставщиком Комплекс‑Бар</div>
+        <div class="row-fluid">
+            <div>+7(717)276-91-26 <br>astana@complex-bar.kz <br>Астана, ул. Тараса Шевченко, д. 4/1 <br>пн-пт:
+                10:00-18:00</div>
+            <div>Catalog...</div>
+            <div>About us...</div>
+            <div>Info...</div>
+        </div>
+    </div>
+
+<!-- ИСПРАЛЕНО -->
+
+    <header>
+        <nav>
+            <ul>
+                <li>Бокалы</li>
+                <li>Стаканы</li>
+                <li>И тд...</li>
+                <li>И тд...</li>
+                <li>И тд...</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Сироп «Карамель» Pinch&Drop стекло 1л D=85,H=330мм</h1>
+        </section>
+        <section>
+            <ul>
+                <li>Характеристики</li>
+                <li>Описание</li>
+                <li>Полезные файлы</li>
+                <li>Наличие в магазинах</li>
+            </ul>
+        </section>
+        <section>Похожие товары</section>
+        <section>Рекомендуем</section>
+        <section>Вы заинтересовались</section>
+    </main>
+    <footer>
+        <section>Лучшие скидки, новинки и мероприятия 2 раза в неделю на вашу почту</section>
+        <section>Станьте поставщиком Комплекс‑Бар</section> 
+        <section>
+            <address>+7(717)276-91-26 <br>astana@complex-bar.kz <br>Астана, ул. Тараса Шевченко, д. 4/1 <br>пн-пт:
+                10:00-18:00</address>
+            <nav>Catalog...</nav>
+            <nav>About us...</nav>
+            <nav>Info...</nav>
+        </section>
+    </footer>
+</body>
+</html>
